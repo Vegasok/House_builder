@@ -1,0 +1,54 @@
+#triangle{
+
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid;
+
+}
+
+.container {
+    width: 95px;
+    border: 2px solid #000;
+}
+.container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+#door{
+    float: right;
+    margin-right: 10px;
+    width: 15px;
+    height: 30px;
+    border-style: solid;
+    border-color: brown;
+
+}
+
+.win{
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    border-style: solid;
+    border-color: blue;
+}
+
+.floor div{
+    margin-left: 15px;
+    margin-top: 15px;
+
+}
+.floor::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+input[type="text"]{
+    width: 40px;
+    margin-left: 50px;
+}
